@@ -1,0 +1,72 @@
+.menu-content{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: var(--orange);
+}
+.menu-content{
+    display: flex;
+    flex-direction: row;
+    /* deixa tudo horizontalmente centralizado */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu-itens{
+    width: 100%;
+    height: 100px; 
+}
+#icon-usr{
+    width: 75px;
+    height: 50px;
+}
+#icon-logo{
+    /* padding-left: 50px; */
+    width: 200px;
+}
+.menu-itens li{
+    
+    margin-left: 3.2%;
+  /*   margin-right: 3%; */
+    
+    float: left;
+    list-style: none;
+    position: relative;
+}
+/*fonte do menu*/
+.menu-itens li a{
+    color: #333;
+    padding: 5px;
+    display: flex;
+}
+.menu-itens li a:hover{
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px;
+}
+.menu-content li ul{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    /* background-color: #fff; */
+    display: none;
+}
+.menu-content li:hover ul{ /*, .menu-content li:hover ul*/
+    display: block;
+    background-color: var(--orange); /*cor de fundo*/
+}
+.menu-content li ul li{
+    /*margin 0 faz com  q o dropdown fique "cheio" ali dentro; ocupe todo o espaço*/
+    margin: 0;
+  
+    border: #333 solid 1px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 190px;
+}
+/* espaçamento entre os itens do header */
+.menu-content ul li{
+    padding:30px;
+}
