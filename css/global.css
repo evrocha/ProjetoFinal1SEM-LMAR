@@ -9,10 +9,10 @@
 html{
 /* Criação de variáveis cor*/
     --orange: #FFA86B;
+    --strong_red: #ac0404d0;
     --gray: #DDDDDD;
+    --red:#c70404d0;
 }
 body{
-   /* display: flex; */
-    height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }

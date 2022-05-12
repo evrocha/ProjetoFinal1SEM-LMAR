@@ -1,0 +1,33 @@
+*{
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* Criação de variáveis*/
+html{
+/* Criação de variáveis cor*/
+    --orange: #FFA86B;
+    --gray: #DDDDDD;
+}
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.corpo1 {
+    width: 500px;
+    background-color: rgb(93, 86, 86);
+    margin-left: 27px;
+    border-radius: 15px;
+    height: 700px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-color: black;
+}
+
+.article-title1{
+    margin-left: 10px;
+    
+}

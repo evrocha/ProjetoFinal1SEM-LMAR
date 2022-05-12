@@ -1,0 +1,19 @@
+.form{
+    width: 950px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-color: black;
+    border: 2px solid;
+    padding-left: 50px;
+    margin-top: 200px;
+}
+input{
+    border-color: var(--gray);
+    border: 1px solid; 
+}
+.nome{
+    width: 200px;
+}
+/* input .form:nth-child(1){
+    width: 2000px;
+} */
