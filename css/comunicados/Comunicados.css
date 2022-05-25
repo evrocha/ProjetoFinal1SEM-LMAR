@@ -1,0 +1,55 @@
+/*estilização do titulo "comunicados"*/
+.title{
+    text-align: center;
+}
+
+/*estiização do botão "Nome do funcionario*/
+.btton1{
+    width: 500px;
+    height: 80px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 45px;
+    margin: 50px;
+}
+
+/*estilização do botão para especificar turma ou eixo*/
+.btton2{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(175, 168, 168);
+}
+
+/*estilização do bloco todo*/
+.bloco{
+    margin: 30px;
+    margin-left: 60px;
+}
+
+/*estilização de centralização de titulo "enviar para"*/
+.centro{
+    margin-left: 75px;
+}
+
+/*estilização do bloco 2 todo*/
+.bloco2{
+    margin: 30px;
+    margin-left: 60px;
+}
+
+/*estilização de centralização de titulo "tema"*/
+.centro2{
+    margin-left: 110px;
+}
+
+/*estilização do botão 3*/
+.btton3{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(175, 168, 168);
+}
+
+.mensagem{
+    margin: 30px;
+    text-align: justify;
+}

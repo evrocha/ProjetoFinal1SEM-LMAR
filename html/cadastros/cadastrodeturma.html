@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/header/header.css">
     <link rel="stylesheet" href="../../css/cadastros/cadastroturma.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
     <!-- Links fonte google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,36 +19,95 @@
     <header>
         <nav class="menu-content">
                 <ul class="menu-itens">
-                    <li><img id="icon-logo" src="../assets/header/icon-senai-logo 1.svg" alt="Senai Logo"></li>
+                    <li><img id="icon-logo" src="../../img/header/icon-senai-logo 1.svg" alt="Senai Logo"></li>
                     <li><a href="#">Cursos</a>
                                                 <!--Submenu Cursos-->
                         <div>
                             <ul id="first-drop">  
-                                <li><a href="header.html">Cursos Livres</a></li>
-                                <li><a href="header.html">Cursos Técnicos</a></li>
-                                <li><a href="header.html">Aprendizagem Industrial</a></li>
-                                <li><a href="header.html">EAD (Ensino à Distância)</a></li>
-                                <li><a href="header.html">Pós-Graduação</a></li>
+                                <li><a href="../../html/cursos/cursos-livres.html">Cursos Livres</a></li>
+                                <li><a href="../../html/cursos/cursos-tecnicos.html">Cursos Técnicos</a></li>
+                                <li><a href="../../html/cursos/cursos-ai.html">Aprendizagem Industrial</a></li>
+                                <li><a href="../../html/cursos/cursos-grad.html"> Cursos de graduação</a></li>
+                                <li><a href="../../html/cursos/cursos-pos.html">Pós-Graduação</a></li>
                             </ul>
                     </li>
                         </div>
                     <li><a href="#">Cadastros</a>  
                                             <!--Submenu Cadastros-->
                         <ul>
-                            <li><a href="#">Cadastrar Aluno</a></li>
-                            <li><a href="#">Cadastrar Turma</a></li>
-                            <li><a href="#">Cadastrar Curso</a></li>
+                            <li><a href="../../html/cadastros/cadastrodealuno.html">Cadastrar Aluno</a></li>
+                            <li><a href="../../html/cadastros/cadastrodeturma.html">Cadastrar Turma</a></li>
+                            <li><a href="../../html/cadastros/cadastroCurso.html">Cadastrar Curso</a></li>
                             
                         </ul>
+
                     </li>
                     <li><a href="">Comunicados</a></li>
-                    <li><a href="">Estágios</a></li>
+                    <li><a href="../Estagios/estagio.html">Estágios</a></li>
                     <li><a href="">Blog do Secretário</a></li>
-                    <li><img id="icon-usr" src="../assets/header/icon-colaborator.svg" alt=""></li>
+                    <li><img id="icon-usr" src="../../img/header/icon-colaborator.svg" alt=""></li>
                 </ul>
             
         </nav>
-    </header> 
-    
+        </header>
+    <div class="curso">
+        <h1> Cadastro de Turma </h1>
+        <label> Tipo do curso: </label>
+        <select>
+            <option> Cursos Livres</option>
+            <option> Curso Técnico</option>
+            <option> Aprendizagem Industrial</option>
+            <option> Graduação</option>
+            <option> Pós-Graduação</option>
+        </select>
+        <br>
+        <label> Eixo tecnológico: </label>
+        <select>
+            <option> Eletroeletrônica - Eletricidade </option>
+            <option> Gestão - Administração Industrial </option>
+            <option> Administração e Gestão </option>
+            <option> Metalmecânica - Metalurgia </option>
+            <option> Tecnologia </option>
+            <option> Fabricação Mecânica e Industrial </option>
+            <option> Logistíca e Transporte </option>
+        </select>
+        <br>
+        <label> Nome do curso: </label>
+        <select>
+            <option>Técnico em Desenvolvimento de Sistemas</option> 
+            <option>Técnico em Redes de Computadores</option>
+            <option>Técnico em Informática para Internet</option>
+        </select>
+        <br>
+        <div class="input">
+        <label> Período: </label>
+            <input type="radio" class="radio" name="periodo" value="manha"> Matutino
+            <input type="radio" class="radio" name="periodo" value="tarde"> Vespertino
+            <input type="radio" class="radio" name="periodo" value="noite"> Noturno
+        </div>
+        <br>
+        <label> Turma: </label>
+        <input type="text" maxlength="8" placeholder="M1DSI">
+        <div class="cadastrar">
+            <a href="cadastrodealuno.html"><button class="enviar" onclick="alert('Turma cadastrada com sucesso!')"></a> Cadastrar
+        </div>
+    </div>
+   
+
+    </div>
+    <footer class="rodapé">
+        <img src="../../img/footer/logo sem fundo.png">
+        <div class="text">
+            <p>
+            <a href="../html/PoliticadePrivacidade.html"> Política de Privacidade - </a> 
+            <a href=""> Segurança de Dados - </a> 
+            Todos Direitos Reservados
+            </p>
+            <br>
+            <p>
+            &copy;B3CGE System - Desenvolvido por Beatriz Holanda da Silva
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

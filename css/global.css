@@ -8,10 +8,9 @@
 /* Criação de variáveis*/
 html{
 /* Criação de variáveis cor*/
-    --orange: #FFA86B;
     --strong_red: #ac0404d0;
     --gray: #DDDDDD;
-    --red:#c70404d0;
+    --red:#c70404e3;
 }
 body{
     font-family: 'Montserrat', sans-serif;

@@ -1,15 +1,41 @@
-.rodapé{
-    background-color: var(--red);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
     width: 100%;
-    bottom: 0;
-    position: absolute;
-    margin: 0 auto;
+    height: 100%;
+    justify-content: end;
+    align-items: end;
+    min-height: 100vh;
+    max-height: 100vh; 
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--red);
     text-align: center;
+    
 }
-.rodapé img{
-    width: 350px;
+footer a{
+    color: inherit;
 }
-.rodapé p{
-    text-decoration: none;
+footer a:hover{
+    color: #410000;
+}
+.imgFooter{
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+}
 
-}
+.text{
+    padding-bottom: 15px;
+ 
+ }
+ footer p:nth-child(2){
+     margin-top:10px;
+     margin-bottom: 10px;
+ }

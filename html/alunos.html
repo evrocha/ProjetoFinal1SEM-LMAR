@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Aluno</title>
     <!-- Link estilizações css -->
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/header/header.css">
-    <link rel="stylesheet" href="../../Sistema Web/css/aluno.css">
-
+    <link rel="stylesheet" href="../css/aluno/aluno.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
+    <!-- Link script de estados e cidades -->
+    <script src="../../js/cidades.js"></script>
     <!-- Links fonte google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,43 +19,176 @@
 </head>
 <body>
     <header>
-        
-            <nav class="menu-content">
-                    <ul class="menu-itens">
-                        <li><img id="icon-logo" src="../../img/header/icon-senai-logo 1.svg" alt="Senai Logo"></li>
-                        <li><a href="#">Cursos</a>
-                                                    <!--Submenu Cursos-->
-                            <div>
-                                <ul id="first-drop">  
-                                    <li><a href="header.html">Cursos Livres</a></li>
-                                    
-                                    <li><a href="header.html">Cursos Técnicos</a></li>
-                                    
-                                    <li><a href="header.html">Aprendizagem  Industrial</a></li>
-                                    
-                                    <li><a href="header.html">EAD (Ensino à Distância)</a></li>
-                                    
-                                    <li><a href="header.html">Pós-Graduação</a></li>
-                                </ul>
-                        </li>
-                            </div>
-                        <li><a href="#">Cadastros</a>  
-                                                <!--Submenu Cadastros-->
-                            <ul class="">
-                                <li><a href="#">Cadastrar Aluno</a></li>
-                                <li><a href="#">Cadastrar Turma</a></li>
-                                <li><a href="#">Cadastrar Curso</a></li>
-                                
+        <nav class="menu-content">
+                <ul class="menu-itens">
+                    <li><img id="icon-logo" src="../../img/header/icon-senai-logo 1.svg" alt="Senai Logo"></li>
+                    <li><a href="#">Cursos</a>
+                                                <!--Submenu Cursos-->
+                        <div>
+                            <ul id="first-drop">  
+                                <li><a href="../../html/cursos/cursos-livres.html">Cursos Livres</a></li>
+                                <li><a href="../../html/cursos/cursos-tecnicos.html">Cursos Técnicos</a></li>
+                                <li><a href="../../html/cursos/cursos-ai.html">Aprendizagem Industrial</a></li>
+                                <li><a href="../../html/cursos/cursos-grad.html"> Cursos de graduação</a></li>
+                                <li><a href="../../html/cursos/cursos-pos.html">Pós-Graduação</a></li>
                             </ul>
-                        </li>
-                        <li><a href="">Comunicados</a></li>
-                        <li><a href="">Estágios</a></li>
-                        <li><a href="">Blog do Secretário</a></li>
-                        <li><img id="icon-usr" src="../../img/header/icon-colaborator.svg" alt=""></li>
-                    </ul>
+                    </li>
+                        </div>
+                    <li><a href="#">Cadastros</a>  
+                                            <!--Submenu Cadastros-->
+                        <ul>
+                            <li><a href="cadastros/cadastrodealuno.html">Cadastrar Aluno</a></li>
+                            <li><a href="cadastros/cadastrodeturma.html">Cadastrar Turma</a></li>
+                            <li><a href="cadastros/cadastroCurso.html">Cadastrar Curso</a></li>
+                            
+                        </ul>
+
+                    </li>
+                    <li><a href="Comunicados.html">Comunicados</a></li>
+                    <li><a href="Estagios/estagio.html">Estágios</a></li>
+                    <li><a href="BlogdoSecretario.html">Blog do Secretário</a></li>
+                    <li><img id="icon-usr" src="../../img/header/icon-colaborator.svg" alt=""></li>
+                </ul>
             
         </nav>
     </header> 
+   
+    <h2 class="h2">Informações do Aluno</h2>
+    
+
+    <div class="corpo1">
+        <div class="text">
+                <div >
+                    <h2>Dados Pessoais </h2>
+                    <div class="text"></div>
+                    <label> Nome:  </label>
+                    <input type="text" maxlength="12" placeholder="Cardelis Solis">
+                    <br>
+                    <label> Data de Nascimento:  </label>
+                    <input type="text" maxlength="12" placeholder="31/08/2004">
+                    <br>
+                    <div >
+                    <label> Nacionalidade: </label>
+                        <label>
+                            <input type="text" maxlength="12" placeholder="Estrangeiro">
+                        </label>
+                    </div>
+                    <div >
+                    <label> Aluno possui alguma deficiência? </label>
+                    <input type="text" maxlength="12" placeholder="Não"> 
+                 </div>
+                    <br>
+                    <div >
+                    <label> Cel.: </label> 
+                        <input type="text" maxlength="12" placeholder="(11) 95865-9586">
+                    
+                    <label> E-mail: </label>
+                    <input type="text" maxlength="12" placeholder="cardelissolis@gmail.com">
+                    <br>
+                    </div>
+                </div>
+                <div >
+                    <h2> Documentos </h2>
+                    <label> CPF: </label>
+                    <input type="text" maxlength="12" placeholder="708.886.886.60">
+                    <br>
+                    <label> RG:  </label>
+                    <input type="text" maxlength="12" placeholder="F-256159-9">
+                    <label> Orgão expeditor: </label>
+                    <input type="text" maxlength="3" placeholder="PF">
+                    <label> Data de Emissão: </label>
+                    <input type="int" maxlength="3" placeholder="31/10/2021">  
+                </div>
+                <div >
+                    <h2> Dados do Responsável </h2>
+ 
+                    
+                    <label> Nome do Responsável: </label>
+                    <input type="text" maxlength="100" placeholder="Delida Pinto">
+                    <br>
+                    <label> CPF do Responsável: </label>
+                    <input type="text" maxlength="14" placeholder="708.669.559.60">
+                    <br>
+                    <label> Parêntesco: </label>
+                    <input type="text" maxlength="100" placeholder="Mãe">
+                    <label>
+                        
+                    </label>
+                    
+                    <br>
+                    
+                    <label> Cel. Responsável: </label>
+                    <input type="tel" maxlength="13" placeholder="(11) 95885-1245">
+                    <br>
+                </div>
+                <div >
+                    <h2> Endereço </h2>
+                    <label> Endereço: </label>
+                    <input type="text" maxlength="100" placeholder="Rua Das Caneleiras ">
+                    <label> Cep: </label>
+                    <input type="text" maxlength="9" placeholder=" 09958-200 ">
+                    <br>
+                    <label> Nº: </label>
+                    <input type="text" maxlength="8" placeholder= "117">
+                    <label> Complemento: </label>
+                    <input type="text" maxlength="10" placeholder="Casa 3" >
+                    <br>
+                    <label> Estado: </label>
+                   <input type="text" maxlength="30" placeholder=" São Paulo ">
+                   <br>
+                    <label>  Município: </label>
+                    <input type="text" maxlength="30" placeholder=" São Bernardo Do Campo ">
+                    <br>
+                    <label> Bairro: </label>
+                    <input type="text" maxlength="30" placeholder=" Dos Casas ">
+                </div>
+                <div class="curso">
+                    <h2> Curso </h2> 
+                    <label> Nome do curso: </label>
+                        <input type="text" maxlength="50" placeholder=" Técnico em Desenvolvimento de Sistemas">
+                    <br>
+                    <label> Período: </label>
+                    <input type="text" maxlength="30" placeholder=" Matutino ">
+                    <br>
+                    <label> Turma: </label>
+                    <input type="text" maxlength="30" placeholder="M1DSI  ">
+                    
+           
+            </div>
+            <tr>
+            
+              
+                    <td></td><a href="../html/paginainicial.html"><button class="imp1" onclick="alert('Informações impressas')">Imprimir Informações</button></a></td>
+
+                <td><a href="../html/cadastros/cadastrodealuno.html"><button class="imp1">Editar Informações</button></a></td>
+            </tr>
+          </div>
+
+        <div class="corpo2">
+            <tr>
+                <td><img class=""src="../img/aluno/Grafico.png"</td>
+
+            </tr>
+           
+            
+        </div>
+
+            <div class="corpo3">
+                <tr>
+              <td><img class="img" src="../img/aluno/tabela de notas.png"</td>
+            </tr>
+            </div>
+
+            
+            <div class="cuadra">
+                <input type="text" id="Observações"  placeholder =         " Observações      " >   
+            </div>
+
+            
+           
+                <a href="../html/paginainicial.html"><button class="rojo"onclick="alert('Aluno Desmatriculado')">Desmatricular Aluno</button></a> 
+        </div>    
+
    
   
 </body>
