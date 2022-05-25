@@ -1,0 +1,163 @@
+body{
+    background-color: white;
+    align-items: center;
+}
+/*Cabeçalho / menu*/
+
+.menu-content{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* background-color: var(--orange); */
+    background-color: #c70404d0;
+}
+
+.menu-content{
+    display: flex;
+    flex-direction: row;
+   
+    /* deixa tudo horizontalmente centralizado */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-itens{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+    height: 100px; 
+}
+
+#icon-usr{
+    width: 75px;
+    height: 40px;
+}
+
+#icon-logo{
+    width: 200px;
+}
+
+.menu-itens li{ 
+    margin-left: 3.2%;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+/*fonte do menu*/
+.menu-itens li a{
+    /* color: #333; */
+    color: #fff;
+    
+    padding: 5px;
+    display: flex;
+}
+
+.menu-itens li a:hover{
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px;
+}
+
+.menu-content li ul{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: none;
+}
+
+.menu-content li:hover ul{ /*, .menu-content li:hover ul*/
+    display: block;
+    background-color: rgb(179, 4, 4)/*cor de fundo*/
+}
+
+.menu-content li ul li{
+    /*margin 0 faz com  q o dropdown fique "cheio" ali dentro; ocupe todo o espaço*/
+    margin: 0;
+    
+    /* height: 40px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: #333 solid 1px;
+    display: block;
+    align-items: center;
+    /*largura do lugar do drop down*/
+    width: 190px;
+}
+
+/* espaçamento entre os itens do header */
+.menu-content ul li{
+    margin-left: 80px;
+    padding:28px;
+    /* justify-content: margn; */
+}
+
+/*Corpo do site*/
+.corpo{
+    width: 275px; /*Largura*/
+    height: 275px; /*Altura*/
+    background-color: rgba(214, 214, 214, 0.774); /*Cor de fundo da div*/
+    margin-top: 10px;
+    margin: 35px;
+    margin-left: 55px;
+    margin-right: 55px;
+    padding: 1px 1px; /*Espaçamento*/
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Fonte do texto*/
+    color: black;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgba(85, 85, 85, 0.527);
+ /* font-weight: bold; / Deixar letra em negrito*/
+}
+
+.corpo-table{
+    padding: 30px;
+    background-color: white;
+}
+
+/*Para dar efeito de zoom na imagem*/
+.img-container{
+    width: 275px;
+    height: 260px;
+    overflow: hidden;
+}
+
+.img-container{
+    width: 100%;
+    height: 200px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform 0.5s ease;
+}
+
+.img-container:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+}
+
+/*Rodapé*/
+.rodapé{
+    background-color: var(--red);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rodapé img{
+    width: 300px;
+}
+
+.rodapé a{
+    color: inherit;
+}
+
+.rodapé a:hover{
+    color: #410000;
+}
+
+.text{
+   padding-bottom: 15px;
+}

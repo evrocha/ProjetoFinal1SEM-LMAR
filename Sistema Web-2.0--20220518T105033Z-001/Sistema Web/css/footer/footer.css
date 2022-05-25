@@ -1,0 +1,25 @@
+.rodapé{
+    background-color: var(--red);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+   
+}
+.rodapé img{
+    
+    width: 300px;
+}
+.rodapé a{
+    color: inherit;
+
+}
+.rodapé a:hover{
+    color: #410000;
+}
+.text{
+   padding-bottom: 15px;
+
+}

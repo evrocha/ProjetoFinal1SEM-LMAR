@@ -1,0 +1,86 @@
+*{
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* Criação de variáveis*/
+html{
+/* Criação de variáveis cor*/
+    --orange: #FFA86B;
+    --gray: #DDDDDD;
+}
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.corpo1 {
+    width: 500px;
+    background-color: rgb(185, 178, 178);
+    margin-left: 27px;
+    border-radius: 15px;
+    height: 700px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-color: black;
+    margin-bottom: 20px;
+}
+
+.corpo2 {
+    width: 500px;
+    background-color: rgb(185, 178, 178);
+    margin-left: 127px;
+    border-radius: 15px;
+    height: 700px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-color: black;
+    margin-bottom: 20px;
+}
+
+.corpo4 {
+    width: 470px;
+    background-color: rgb(185, 178, 178);
+    margin-left: 127px;
+    border-radius: 150px;
+    height: 80px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.h2 {
+    align-items: center;
+    text-align: center;
+}
+
+.rodapé{
+    background-color: var(--red);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rodapé img{
+    width: 300px;
+}
+
+.rodapé a{
+    color: inherit;
+
+}
+
+.rodapé a:hover{
+    color: #410000;
+}
+
+.text{
+   padding-bottom: 15px;
+
+}
